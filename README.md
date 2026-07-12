@@ -45,6 +45,15 @@ Depois acesse `http://localhost:8000`.
 
 Publicado no **GitHub Pages** com domínio personalizado configurado via `CNAME`.
 
+## 🔒 Proteção do branch `main`
+
+Como o site é publicado direto do `main`, recomenda-se proteger o branch contra force push e exclusão acidental:
+
+1. No repositório, acesse **Settings → Branches → Add branch ruleset** (ou clique em **Protect this branch** no aviso do GitHub)
+2. Nomeie a regra (ex.: `main`), defina o target como o branch `main` e ative **Enforcement status: Active**
+3. Marque as regras **Restrict deletions** e **Block force pushes**
+4. (Opcional) Ative **Require a pull request before merging** para que toda alteração passe por PR
+
 ## 📝 Licença
 
 Distribuído sob a licença [MIT](LICENSE).
