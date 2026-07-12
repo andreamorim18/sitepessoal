@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>André Luiz | Desenvolvedor Web</title>
+    <meta name="description" content="Portfólio de André Luiz — Desenvolvedor Web em formação e estudante de Engenharia de Software. Certificações Rocketseat, projetos e contato.">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="canonical" href="https://www.andreamorimdev.com.br/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="André Luiz | Desenvolvedor Web">
+    <meta property="og:description" content="Portfólio de André Luiz — Desenvolvedor Web em formação e estudante de Engenharia de Software.">
+    <meta property="og:url" content="https://www.andreamorimdev.com.br/">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -339,6 +349,7 @@
         ======================================== */
         section {
             padding: 5rem 0;
+            scroll-margin-top: 80px;
         }
 
         .section-header {
@@ -867,6 +878,7 @@
             padding: 3rem 0;
             border-top: 1px solid var(--glass-border);
             text-align: center;
+            scroll-margin-top: 80px;
         }
 
         .footer-content {
@@ -1031,6 +1043,20 @@
         .delay-3 { animation-delay: 0.3s; }
         .delay-4 { animation-delay: 0.4s; }
         .delay-5 { animation-delay: 0.5s; }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1044,7 +1070,7 @@
     <header>
         <div class="container header-content">
             <div class="logo">André.dev</div>
-            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false" aria-controls="nav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -1146,19 +1172,19 @@
                         <div class="social-section">
                             <h4>Minhas Redes</h4>
                             <div class="social-grid">
-                                <a href="https://github.com/andreamorim18" target="_blank" class="social-card">
+                                <a href="https://github.com/andreamorim18" target="_blank" rel="noopener noreferrer" class="social-card">
                                     <span class="social-icon github-icon">GH</span>
                                     <span>GitHub</span>
                                 </a>
-                                <a href="https://www.linkedin.com/in/andreamorim5855/" target="_blank" class="social-card">
+                                <a href="https://www.linkedin.com/in/andreamorim5855/" target="_blank" rel="noopener noreferrer" class="social-card">
                                     <span class="social-icon linkedin-icon">in</span>
                                     <span>LinkedIn</span>
                                 </a>
-                                <a href="https://www.youtube.com/@Darkazerazs" target="_blank" class="social-card">
+                                <a href="https://www.youtube.com/@Darkazerazs" target="_blank" rel="noopener noreferrer" class="social-card">
                                     <span class="social-icon youtube-icon">▶</span>
                                     <span>YouTube</span>
                                 </a>
-                                <a href="https://www.instagram.com/andre.amorim33/" target="_blank" class="social-card">
+                                <a href="https://www.instagram.com/andre.amorim33/" target="_blank" rel="noopener noreferrer" class="social-card">
                                     <span class="social-icon instagram-icon">📷</span>
                                     <span>Instagram</span>
                                 </a>
@@ -1181,10 +1207,10 @@
                                     <span class="project-tag">Responsivo</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="https://andreamorim18.github.io/projeto/" target="_blank" class="btn btn-primary btn-sm">
+                                    <a href="https://andreamorim18.github.io/projeto/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
                                         <span>🌐</span> Ver Projeto
                                     </a>
-                                    <a href="https://github.com/andreamorim18/projeto" target="_blank" class="btn btn-secondary btn-sm">
+                                    <a href="https://github.com/andreamorim18/projeto" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
                                         <span>💻</span> Código Fonte
                                     </a>
                                 </div>
@@ -1404,16 +1430,16 @@
             <div class="footer-content">
                 <div class="logo" style="font-size: 2rem;">André.dev</div>
                 <div class="social-links">
-                    <a href="https://github.com/andreamorim18" class="social-link" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/andreamorim18" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <span>💻</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/andreamorim5855/" class="social-link" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/andreamorim5855/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <span>💼</span>
                     </a>
-                    <a href="https://www.youtube.com/@Darkazerazs" class="social-link" target="_blank" aria-label="YouTube">
+                    <a href="https://www.youtube.com/@Darkazerazs" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                         <span>▶️</span>
                     </a>
-                    <a href="https://www.instagram.com/andre.amorim33/" class="social-link" target="_blank" aria-label="Instagram">
+                    <a href="https://www.instagram.com/andre.amorim33/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <span>📷</span>
                     </a>
                 </div>
@@ -1437,13 +1463,16 @@
         // Mobile Menu Toggle
         function toggleMenu() {
             const nav = document.getElementById('nav');
-            nav.classList.toggle('active');
+            const toggle = document.querySelector('.menu-toggle');
+            const isOpen = nav.classList.toggle('active');
+            toggle.setAttribute('aria-expanded', isOpen);
         }
 
         // Close menu when clicking on a link
         document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', () => {
                 document.getElementById('nav').classList.remove('active');
+                document.querySelector('.menu-toggle').setAttribute('aria-expanded', 'false');
             });
         });
 
@@ -1455,7 +1484,7 @@
             } else {
                 header.style.background = 'rgba(10, 10, 15, 0.8)';
             }
-        });
+        }, { passive: true });
 
         // Intersection Observer for animations
         const observerOptions = {
