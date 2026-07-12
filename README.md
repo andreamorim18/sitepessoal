@@ -1,6 +1,6 @@
 # Site Pessoal — Portfólio
 
-Portfólio pessoal de **André Luiz**, desenvolvedor web em formação e estudante de Engenharia de Software.
+Portfólio pessoal de **André Luiz**, desenvolvedor web em formação e criador de livros.
 
 🌐 **Acesse:** [www.andreamorimdev.com.br](https://www.andreamorimdev.com.br)
 
@@ -25,7 +25,7 @@ Portfólio pessoal de **André Luiz**, desenvolvedor web em formação e estudan
 | Início | Apresentação, estatísticas e chamadas para ação |
 | Quem sou eu | Trajetória, redes sociais e projeto em destaque |
 | Skills | Tecnologias: HTML5, CSS3, JavaScript, Git e GitHub |
-| Educação | Formação acadêmica e certificações (Rocketseat, UNISALES) |
+| Educação | Certificações técnicas (Rocketseat) |
 | Contato | Links para GitHub, LinkedIn, YouTube e Instagram |
 
 ## 🚀 Como rodar localmente
